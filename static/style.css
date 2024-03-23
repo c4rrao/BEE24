@@ -1,0 +1,164 @@
+body {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+@media screen and (max-width: 768px) {
+    ::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 1); /* Adjust the alpha value as needed */
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.my-btn .nav-link {
+    line-height: 0.2;
+}
+
+.semi-transparent {
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+.color-ball-blue {
+    background: radial-gradient(circle at 50% 50%, rgba(67, 83, 163, 0.5) 0%, rgba(67, 83, 163, 0) 75%) !important;
+}
+
+.blue-highlight {
+    filter: drop-shadow(0px 0px 50px #4353A3);
+}
+
+.yellow-highlight {
+    filter: drop-shadow(0px 0px 50px #fbaf37);
+}
+
+.pink-highlight {
+    filter: drop-shadow(0px 0px 50px #f07a89);
+}
+
+.orange-highlight {
+    filter: drop-shadow(0px 0px 50px #f16645);
+}
+
+.biv-color-text {
+    color: #4353A3;
+}
+
+.wider-letter-spacing {
+    letter-spacing: .25rem;
+}
+
+.wide-letter-spacing {
+    letter-spacing: 0.5rem;
+}
+
+.elipses {
+    background:
+        radial-gradient(circle at 100% 48%, rgba(67, 83, 163, 1) 0%, rgba(67, 83, 163, 0) 23%),
+        radial-gradient(circle at 67% 110%, rgba(241, 102, 69, 1) 0%, rgba(67, 83, 163, 0) 29%),
+        radial-gradient(circle at 5% 58%, rgba(251, 175, 55, 1) 0%, rgba(67, 83, 163, 0) 28%),
+        radial-gradient(circle at 31% 5%, rgba(242, 150, 162, 1) 0%, rgba(67, 83, 163, 0) 23%);
+}
+
+.elipses-noblue {
+    background:
+        radial-gradient(circle at 95% 14%, rgba(241, 102, 69, 1) 0%, rgba(67, 83, 163, 0) 29%),
+        radial-gradient(circle at 13% 89%, rgba(241, 102, 69, 1) 0%, rgba(67, 83, 163, 0) 29%),
+        radial-gradient(circle at 50% 63%, rgba(251, 175, 55, 0.5) 0%, rgba(67, 83, 163, 0) 28%),
+        radial-gradient(circle at 11% 5%, rgba(242, 150, 162, 1) 0%, rgba(67, 83, 163, 0) 23%),
+        radial-gradient(circle at 61% 73%, rgba(242, 150, 162, 1) 0%, rgba(67, 83, 163, 0) 23%);
+}
+
+.elipses-blend {
+    background:
+        radial-gradient(circle at 13% 89%, rgba(241, 102, 69, 0.32) 0%, rgba(67, 83, 163, 0) 29%),
+        radial-gradient(circle at 67% 110%, rgba(241, 102, 69, 0.43) 0%, rgba(67, 83, 163, 0) 29%),
+        radial-gradient(circle at 5% 58%, rgba(251, 175, 55, 0.68) 0%, rgba(67, 83, 163, 0) 38%),
+        radial-gradient(circle at 95% 48%, rgba(242, 150, 162, 0.7) 0%, rgba(67, 83, 163, 0) 73%);
+}
+
+.elipses-team {
+    background:
+        radial-gradient(circle at 100% 48%, rgba(67, 83, 163, 0.30) 0%, rgba(67, 83, 163, 0) 33%),
+        radial-gradient(circle at 87% 100%, rgba(241, 102, 69, 0.42) 0%, rgba(67, 83, 163, 0) 39%),
+        radial-gradient(circle at 0% 58%, rgba(251, 175, 55, 0.60) 0%, rgba(67, 83, 163, 0) 18%),
+        radial-gradient(circle at 31% 0%, rgba(242, 150, 162, 1) 0%, rgba(67, 83, 163, 0) 13%);
+}
+
+/* Add custom CSS for transparent cards with a white border */
+.card.border-white {
+    /* Semi-transparent background */
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    height: 100% !important;
+}
+
+/* This ensures the cards have equal height and width regardless of the content */
+.row-equal>div[class*='col-']>.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body.text-center {
+    flex-grow: 1;
+}
+
+#click-here {
+    box-shadow: inset 0 0 2px 4px #f16645;
+    border-radius: 25px;
+    color: #f16645;
+}
+
+#read-regulations {
+    box-shadow: inset 0 0 2px 4px #fbaf37;
+    border-radius: 25px;
+    color: #fbaf37;
+}
+
+@media screen and (max-width: 576px) {
+    #click-here {
+        box-shadow: initial;
+    }
+
+    #read-regulations {
+        box-shadow: initial;
+    }
+}
+
+#what-is-biv-box {
+    background: rgba(220, 220, 220, 0.4);
+}
+
+#open-cerimony-card {
+    background: -webkit-linear-gradient(0deg, rgba(251, 175, 55, 0.75) 10%, #fbaf37);
+    opacity: 85%;
+}
+
+#inside-days-card {
+    background-color: #F16645;
+}
+
+#why-participate,
+#testimonials {
+    background-color: #4353A3;
+}
+
+#partners,
+#faqs {
+    background-color: rgba(242, 150, 162, 0.5);
+}
+
+#partners img {
+    height: 100px;
+    width: auto;
+    max-width: 100%;
+}
+
+#footer {
+    background-color: #F16645;
+}
