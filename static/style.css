@@ -109,24 +109,25 @@ body {
 }
 
 .hexagon {
-    transform: rotate(30deg); 
-    width: 300px; /* Adjust size as needed */
-    height: 340px; /* This height is calculated to maintain the aspect ratio of a hexagon */
+    width: 20vw; /* Adjust size as needed */
+    height: 23vw; /* This height is calculated to maintain the aspect ratio of a hexagon */
+    z-index: 1;
     display: flex;
-    transform: translate(-50%, -50%) rotate(0deg); /* Center the hexagon and rotate if needed */
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%) rotate(30deg); /* Center the hexagon and rotate if needed */
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); /* Hexagon shape */
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .hexagon{
-        transform: rotate(30deg); 
-    width: 300pt; /* Adjust size as needed */
-    height: 115.47pt; /* This height is calculated to maintain the aspect ratio of a hexagon */
-    display: flex;
-    transform: translate(-50%, -50%) rotate(0deg); /* Center the hexagon and rotate if needed */
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); /* Hexagon shape */
+        width: 150px; /* Adjust size as needed */
+        height: 170px; /* This height is calculated to maintain the aspect ratio of a hexagon */
+        display: flex;
+        transform: translate(-50%, -50%) rotate(30deg); /* Center the hexagon and rotate if needed */
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); /* Hexagon shape */
     }
-}
+} */
 
 
 .arrow-down {
