@@ -10,7 +10,6 @@ body {
 
 .navbar {
     background-color: #F4F3EF; /* Adjust the alpha value as needed */
-    height: 10vh;
 }
 
 .navbar-nav {
@@ -21,12 +20,7 @@ body {
 
 .my-btn .nav-link {
     line-height: 0.2;
-    font-size: 2vw;
 }
-
-.nav-item {
-    padding: 20px 20px; /* Adjust the value as needed */
-  }
 
 .semi-transparent {
     background-color: rgba(255, 255, 255, 0);
