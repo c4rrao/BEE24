@@ -10,6 +10,7 @@ body {
 
 .navbar {
     background-color: #F4F3EF; /* Adjust the alpha value as needed */
+    /* height: 10vh; */
 }
 
 .navbar-nav {
