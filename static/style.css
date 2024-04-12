@@ -1,5 +1,6 @@
 body {
     font-family: 'Outfit', sans-serif !important;
+    overflow-x: hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -92,12 +93,21 @@ body {
 }
 
 .hexagon {
+    position: relative;
     width: 20vw; /* Adjust size as needed */
     height: 23vw; /* This height is calculated to maintain the aspect ratio of a hexagon */
     z-index: 1;
     display: flex;
     transform: translate(-50%, -50%) rotate(30deg); /* Center the hexagon and rotate if needed */
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); /* Hexagon shape */
+}
+
+.curved-rectangle {
+    position: relative; 
+    width: 100vw; /* Adjust size as needed */
+    height: 50vw; /* Adjust size as needed */
+    background-color: #55AE84; /* Adjust color as needed */
+    border-radius: 10vw; /* Adjust curvature as needed */
 }
 
 .arrow-down {
