@@ -117,3 +117,15 @@ body {
     border-right: 20px solid transparent;
     border-top: 20px solid black; /* Change color as desired */
 }
+
+.faq-toggle {
+    margin-top: 5vw;
+    height: 3vw; /* Adjust as needed */
+    font-size: 2vw;
+}
+
+.faq-content {
+    display: none;
+    height: 10vw; /* Adjust as needed */
+    font-size: 1.5vw;
+}

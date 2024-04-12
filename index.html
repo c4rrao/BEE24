@@ -154,7 +154,30 @@
     <div style="overflow-x: hidden">
       <div class="hexagon" style="z-index: 1; transform: rotate(30deg); margin-left: 5%; margin-top: 5%;  background-color: #034461"></div>
       <p style="color:#F4F3EF; position: relative; margin-top: -16%; margin-left: 9.5%; font-size: 6vw; z-index: 200;">FAQ</p>
-      <div class="curved-rectangle" style="margin-left: 18%; margin-top: -10%;"></div>
+      <div class="curved-rectangle" style="margin-left: 18%; margin-top: -10%;">
+        
+        <div style="display: flex; flex-direction: column; padding-left: 10%; padding-right: 25%;">
+
+          <button class="faq-toggle">Question 1</button>
+          <div class="faq-content" style="display: none;">Answer 1</div>
+      
+          <button class="faq-toggle">Question 2</button>
+          <div class="faq-content" style="display: none;">Answer 2</div>
+      
+          <button class="faq-toggle">Question 3</button>
+          <div class="faq-content" style="display: none;">Answer 3</div>
+
+          <button class="faq-toggle">Question 4</button>
+          <div class="faq-content" style="display: none;">Answer 4</div>
+      
+          <button class="faq-toggle">Question 5</button>
+          <div class="faq-content" style="display: none;">Answer 5</div>
+      
+          <button class="faq-toggle">Question 6</button>
+          <div class="faq-content" style="display: none;">Answer 6</div>
+        </div>
+      
+      </div>
     </div>
 
     <div>
@@ -162,6 +185,18 @@
       <img src="images/team.png" style="width:100%; margin-top: 5%; position: relative; z-index: 1000; padding-left: 5%; padding-right: 5%;" alt="team" loading="lazy">
     </div>
   </div>
+
+  <script>
+    let buttons = Array.from(document.querySelectorAll('.faq-toggle'));
+    let contents = Array.from(document.querySelectorAll('.faq-content'));
+
+    buttons.forEach((button, index) => {
+        button.addEventListener('click', () => {
+            let content = contents[index];
+            content.style.display = content.style.display === 'none' ? 'block' : 'none';
+        });
+    });
+  </script>
 
 </body>
 
