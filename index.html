@@ -77,8 +77,8 @@
     <main>
     <!-- Primeira página, assumindo toda a altura (hexágonos e minhoca estão fora da div porque position: absolute) -->
     <div style="background-color: #F4F3EF; width: 100%; height: 95vh; padding:0pt; display: flex; flex-direction: column; justify-content: space-between;">
-      <div class="hexagons" style="position: absolute; transform: rotate(30deg); top: 0; left: 0; width: 17.5vw; height: 20.5vw; margin-left: 11.5%; margin-top: -5.5%; background-color: #F16645"></div>
-      <div class="hexagons" style="position: absolute; transform: rotate(30deg); top: 0; left: 0; width: 17.5vw; height: 20.5vw; margin-left: -5%; margin-top: 4%; background-color: #F16645"></div>
+      <div class="xgon" style="position: absolute; top: 0; left: 0; margin-left: 11.5%; margin-top: -5.5%; background-color: #f99E53"></div>
+      <div class="xgon" style="position: absolute; top: 0; left: 0; margin-left: -5%; margin-top: 4%; background-color: #f99E53"></div>
     
       <img src="images/initial_bigworm.png" style="height: 30vw; position: absolute; top:0; right: 0; z-index: 1;" alt="worm" loading="lazy">
       <div style = "height: 10vh;"></div>
@@ -95,75 +95,88 @@
 
 
     <!-- Página sobre o que é o BEE -->
-    <div id="intro" style="background-color: #034461; padding:0pt; width: 100%;">
+    <div id="intro" style="background-color: #034461; padding:0pt; width: 100%; overflow: hidden;">
       <div style="height: 1vh;"></div>
-      <p style="color:#F4F3EF; margin-left: 5%; margin-top: 3%;  font-size: 5vw;"> What is BEE</p>
-      <p style="color:#F4F3EF; margin-left: 5%; margin-top: 0%; font-size: 1.8vw; width: 40vw;">
+      <p style="color:#F4F3EF; margin-left: 5%; margin-top: 7%;  font-size: 5vw;"> What is BEE</p>
+      <p style="color:#F4F3EF; margin-left: 5%; margin-top: 0%; font-size: 1.8vw; width: 50vw;">
         O BEST Entrepreneurship Experience (BEE) é um evento que irá ocorrer no dia 11 de Maio que reúne estudantes de toda a Universidade de Lisboa que querem desenvolver as suas capacidades empreendedoras, enquanto trabalham numa ideia de negócio para enfrentar um desafio atual.
         Através de uma série de workshops e Innovation Sprints, ganharão skills valiosas relacionadas com o empreendorismo, a inovação e a entrada no mercado.
-        Mais que uma competição, é uma experiência!</p>
-      <div class="hexagon" style=" transform: rotate(30deg); margin-left: 75%; margin-top:-35%; background-color: #034461 "></div>
-      <div class="hexagon" style=" transform: rotate(30deg); margin-left: 53%; margin-top:-7%; background-color: #034461"></div>
-      <div class="hexagon" style=" transform: rotate(30deg); margin-left: 53%; margin-top:11%;  background-color: #F4F3EF"></div>
-      <img src="images/video_tmp.png"  style=" margin-top: -25%; margin-left: 10%; width:20vw; " alt="video" loading="lazy">
-      <div class="hexagon" style=" transform: rotate(30deg); margin-left: 30%; margin-top:-9%;  background-color: #034461"></div>
-      <div class="hexagon" style=" transform: rotate(30deg); margin-left:  30%; margin-top:11%;  background-color: #F4F3EF"></div>
-      <div class="hexagon" style=" transform: rotate(30deg); margin-left: 8%; margin-top:-33%;  background-color: #F4F3EF"></div>
-      <div class="hexagon" style=" transform: rotate(30deg); margin-left: -15%; margin-top:-6%;  background-color: #034461"></div>
-      <div class="hexagon" style=" transform: rotate(30deg); margin-left: 8%; margin-top:-8%;  background-color: #034461"></div>
-      <div class="hexagon" style=" transform: rotate(30deg); margin-left: 8%; margin-top:10%;  background-color: #F4F3EF"></div>
-      <div class="hexagon" style=" transform: rotate(30deg); margin-left: 8%; margin-top:10%;  background-color: #034461"></div>
-      <div class="hexagon" style=" transform: rotate(30deg); margin-left: 30%; margin-top:-8%;  background-color: #F4F3EF"></div>
-      <div class="hexagon" style=" transform: rotate(30deg); margin-left: 53%; margin-top:-8%;  background-color: #F4F3EF"></div>
-      <div class="hexagon" style=" transform: rotate(30deg); margin-left: 75%; margin-top:-8%;  background-color: #034461"></div>
-      <div class="hexagon mobile-only" style=" transform: rotate(30deg); margin-left: 53%; margin-top:-6%;  background-color: #034461"></div>
-      <div class="hexagon mobile-only" style=" transform: rotate(30deg); margin-left: 75%; margin-top:-8%;  background-color: #034461"></div>
-      <div class="hexagon mobile-only" style=" transform: rotate(30deg); margin-left: 53%; margin-top:-6%;  background-color: #F4F3EF"></div>
+        Mais que uma competição, é uma experiência!
+      </p>
+      
+      <!-- <img src="images/video_tmp.png"  style=" margin-top: 0%; margin-left: 10%; width:25vw; " alt="video" loading="lazy"> -->
 
+      <div class="xgon" style="margin-left: 90%; margin-top:-40%;"></div>
+      <div class="xgon" ximg="../images/hexagonos/orgs.png" style="margin-left: 73.5%; margin-top:-8%;"></div>
+      <div class="xgon-outline" style="margin-left: 57%; margin-top:-26.7%;"></div>
+      <div class="xgon" style="margin-left: 73.5%; margin-top: 11%;"></div>
+      <div class="xgon" style="margin-left: 57%; margin-top:-8%;"></div>
+      <div class="xgon-outline" style="margin-left: 73.5%; margin-top:-8%;"></div>
+      <div class="xgon" ximg="../images/hexagonos/rapaz.png" style="margin-left: 40.5%; margin-top:-17.5%;"></div>
+      <div class="xgon" style="margin-left: 24%; margin-top:-8%;"></div>
+      <div class="xgon" style="margin-left: 7.5%; margin-top:-27%;"></div>
+      <div class="xgon-outline" style="margin-left: 7.5%; margin-top: 1.5%;"></div>
+      <div class="xgon" style="margin-left: -9%; margin-top: -8%;"></div>
+      <div class="xgon" style="margin-left: 24%; margin-top: -17.5%;"></div>
+      <div class="xgon" style="margin-left: 40.5%; margin-top: -8%;"></div>
+      <div class="xgon-outline" style="margin-left: 24%; margin-top: -8%;"></div>
+      <div class="xgon" ximg="../images/hexagonos/1equipa.png" style="margin-left: 7.5%; margin-top: -8%;"></div>
+      <div class="xgon" style="margin-left: 24%; margin-top: -8%;"></div>
+      <div class="xgon" style="margin-left: 7.5%; margin-top: -8%;"></div>
+      <div class="xgon-outline" style="margin-left: 24%; margin-top: -8%;"></div>
+      <div class="xgon" ximg="../images/hexagonos/rapariga.png" style="margin-left: 24%; margin-top: 1.5%;"></div>
+      <div class="xgon" style="margin-left: 40.5%; margin-top: -8%;"></div>
+      <div class="xgon" style="margin-left: 57%; margin-top: -8%;"></div>
+      <div class="xgon-outline" style="margin-left: 73.5%; margin-top: -27%;"></div>
+      <div class="xgon" style="margin-left: 73.5%; margin-top: 1.5%;"></div>
+      <div class="xgon" ximg="../images/hexagonos/todaagente.png" style="margin-left: 57%; margin-top: -8%;"></div>
+      <div class="xgon" style="margin-left: 73.5%; margin-top: -8%;"></div>
+      <div class="xgon-outline" style="margin-left: 90%; margin-top: -8%;"></div>
 
-      <p style="color:#F4F3EF;  margin-top: -175%;  font-size: 5vw; padding-right: 5vw; text-align: right;">
+      <p style="color:#F4F3EF;  margin-top: -157%;  font-size: 5vw; padding-right: 5vw; text-align: right;">
         Workshops</p>
       <p style="color:#F4F3EF; margin-left: 60%;  margin-top: -0%;  font-size: 1.8vw; padding-right: 5vw; text-align: right;">
         Experiências práticas e imersivas que fornecerão aos participantes habilidades, ferramentas e conhecimento para transformar suas ideias em realidade.</p>
-      <p style="color:#F4F3EF;  margin-top: 10%;  font-size: 5vw; padding-right: 5vw; text-align: right;">
+      <p style="color:#F4F3EF;  margin-top: 20%;  font-size: 5vw; padding-right: 5vw; text-align: right;">
         Innovation Sprint</p>
       <p style="color:#F4F3EF; margin-left: 60%;  margin-top: 0%;  font-size: 1.8vw; padding-right: 5vw; text-align: right;">
         Reúne a tua equipa e prepara-te para mergulhar de cabeça no emocionante mundo do empreendedorismo!Terás a oportunidade de libertar a tua criatividade, experimentar e aperfeiçoar as tuas ideias, tudo isto com a orientação dos nossos facilitadores especializados.
         Sente a energia eletrizante no ar enquanto tu e a tua equipa se unem numa perfeita sintonia para transformar as tuas ideias em realidade!
         Chegou a altura de libertar todo o teu espírito empreendedor e alcançar o sucesso!</p>
-      <p style="color:#F4F3EF; margin-left: 5%; margin-top: 35%;  font-size: 5vw;"> Pitch</p>
-      <p style="color:#F4F3EF; margin-left: 5%; margin-top: 0%; font-size: 1.8vw; width: 40vw;">
+      <p style="color:#F4F3EF; margin-left: 5%; margin-top: 20%;  font-size: 5vw;"> Pitch</p>
+      <p style="color:#F4F3EF; margin-left: 5%; margin-top: 0%; font-size: 1.8vw; width: 37vw;">
         Pratiquem as vossas apresentações perante as outras equipas.
         Esta é a oportunidade perfeita para aprimorar as vossas habilidades de apresentação, receber feedback dos vossos colegas e crescer juntos.
         Terão a oportunidade de apresentar o vosso produto às outras equipas, fornecendo e recebendo feedback construtivo ao longo do caminho.
         Portanto, preparem-se para levar a vossa apresentação para o próximo nível!</p>
-      <div style="height: 20vh;"></div>
+      
+        <div class="xgon mobile-only" style="margin-left: 65%; margin-top:-24%;"></div>
+
+      <div style="height: 10vh;"></div>
+      <div class="wide-screen-only" style="height: 10vh;"></div>
     </div>
 
-    <div style="padding: 0; width: 100%; ">
-    <div style="max-height: 70vh; padding:0pt; width:100% ; position: relative; ">
+    <!-- <div style="padding:0pt; width:100% ; position: relative; ">
       <img src="images/prizes_bg.png"  style=" width:100%; " alt="video" loading="lazy">
       <h1 style=" margin-top: -33%; margin-left: 3%; font-size: 8vw; color:#F4F3EF"> Prizes </h1>
-      <div class="hexagon" style=" transform: rotate(30deg); margin-left: 53%; margin-top:-7%;  background-color: transparent"></div>
-      <div class="hexagon" style=" transform: rotate(30deg); margin-left: 75%; margin-top:-8%;  background-color: #F4F3EF"></div>
-      <div class="hexagon" style=" transform: rotate(30deg); margin-left: 53%; margin-top:-7%;  background-color: #F4F3EF"></div>
-      <div class="hexagon" style=" transform: rotate(30deg); margin-left: 30%;; margin-top:-33%;  background-color: transparent"></div>
+      <div class="xgon" style="margin-left: 40%; margin-top:-12%;"></div>
+      <div class="xgon" style="margin-left: 65%; margin-top:-12%;"></div>
+      <div class="xgon" style="margin-left: 40%; margin-top:-12%;"></div>
+      <div class="xgon" style="margin-left: 40%; margin-top:-12%;"></div>
+      <div class="xgon" style="margin-left: 40%; margin-top:-12%;"></div>
+    </div> -->
 
-      <div style="max-height: 30vh;"></div>
-    </div>
+    <div style="position: relative; padding:10%;">
+      <img src="images/schedule.png"  style="width: 100%; align-items: center;" alt="video" loading="lazy">
 
-    <div style="min-height: 30vh; padding:0pt; width:100%; position: relative; ">
-      <img src="images/schedule.png"  style="width:100%; " alt="video" loading="lazy">
-      <div style="max-height: 20vh; "> </div>
     </div>
-  </div>
 
 
   <div class="text-center py-5">
     <div id="click-here" class="d-inline-block mt-md-5">
       <p class="d-inline-block my-0 align-middle" style="font-size: 3vw; margin-right: 10vw; margin-left: 20vw;">If you want to participate: </p>
-      <button type="button" class="d-inline-block my-btn rounded-5 my-btn-light-orange px-4 mt-2 mt-md-0" style="height: 6vw; font-size: 3vw; background-color: #F16645; border-color: #F16645;">
-        <a class="text-decoration-none text-white fw-bold" style="color: #F16645;" href="https://docs.google.com/forms/d/1P1rKgaF-wU9Q7YJbDoPwkT1VuI8C_h4h76rhRTKE2cQ/viewform?edit_requested=true">Click Here</a>
+      <button type="button" class="d-inline-block my-btn rounded-5 my-btn-light-orange px-4 mt-2 mt-md-0" style="height: 6vw; font-size: 3vw; background-color: #f99E53; border-color: #f99E53;">
+        <a class="text-decoration-none text-white fw-bold" style="color: #f99E53;" href="https://docs.google.com/forms/d/1P1rKgaF-wU9Q7YJbDoPwkT1VuI8C_h4h76rhRTKE2cQ/viewform?edit_requested=true">Click Here</a>
       </button>
     </div>
   </div>
@@ -172,16 +185,47 @@
       <p style=" font-size: 8vw; color: #034461;" class=" fw-bold"> Partners </p>
       <div style="max-height: 50vh;"> </div>
     </div>
+    <div style="max-height: 45vw; background-color: #f99E53; width: 100%; overflow: hidden;">
+      <div class="xgon-outline" style="margin-left: 17.5%; margin-top: -5%;" bgc="#f99E53" ></div>
+      <div class="xgon-outline" style="margin-left: 50.4%; margin-top: -17.5%;" bgc="#f99E53" ></div>
+      <div class="xgon-outline" style="margin-left: 83.3%; margin-top: -17.5%;" bgc="#f99E53" ></div>
+      
+      <div class="xgon-outline" style="margin-left: 1%; margin-top: -8%;" bgc="#f99E53" >
+        <img src="images/logotipos/websummit.png" style="padding: 2vw;"></img>
+      </div>
+      <div class="xgon-outline" style="margin-left: 33.9%; margin-top: -17.5%;" bgc="#f99E53" >
+        <img src="images/logotipos/lisboat.png" style="padding: 3.5vw;"></img>
+      </div>
+      <div class="xgon-outline" style="margin-left: 66.8%; margin-top: -17.5%;" bgc="#f99E53" ></div>
+      
+      <div class="xgon-outline" style="margin-left: 17.5%; margin-top: -8%;" bgc="#f99E53" ></div>
+      <div class="xgon-outline" style="margin-left: 50.4%; margin-top: -17.5%;" bgc="#f99E53" ></div>
+      <div class="xgon-outline" style="margin-left: 83.3%; margin-top: -17.5%;" bgc="#f99E53" ></div>
+      
+      <div class="xgon-outline" style="margin-left: 1%; margin-top: -8%;" bgc="#f99E53" ></div>
+      <div class="xgon-outline" style="margin-left: 33.9%; margin-top: -17.5%;" bgc="#f99E53" ></div>
+      <div class="xgon" style="margin-left: 66.8%; margin-top: -17.5%; background: white"" >
+        <img src="images/logotipos/pasteis.jpg" style="padding: -1vw;"></img>
+      </div>
+      
+      <div class="xgon-outline" style="margin-left: 17.5%; margin-top: -8%;" bgc="#f99E53" >
+        <img src="images/logotipos/oceanario_preto.png" style="padding: 1vw; padding-bottom: 4vw;"></img>
+      </div>
+      <div class="xgon-outline" style="margin-left: 50.4%; margin-top: -17.5%;" bgc="#f99E53" ></div>
+      <div class="xgon-outline" style="margin-left: 83.3%; margin-top: -17.5%;" bgc="#f99E53" ></div>
+      
+    </div>
+
+    <div style="margin-top: 0%; z-index:1;  margin-left: 5%">
+      <p style=" font-size: 8vw; color: #034461;" class=" fw-bold"> Supporters </p>
+      <div style="max-height: 50vh;"> </div>
+    </div>
 
 
-    <div style="background-color: #F16645; padding:0pt; height: 100 vh; width: 100%; margin-top: 20%;">
-
-      <div class="hexagon" style=" transform: rotate(30deg); margin-left: -2%; margin-top:-12.5%;  background-color: #F4F3EF"></div>
-      <div class="hexagon" style=" transform: rotate(30deg); margin-left: 20%; margin-top:-9%;  background-color: #F4F3EF"></div>
-      <div class="hexagon" style=" transform: rotate(30deg); margin-left: 43%; margin-top:-34%;  background-color: #F4F3EF"></div>
-      <div class="hexagon" style=" transform: rotate(30deg); margin-left: -2%; margin-top:13%;  background-color: #F4F3EF"></div>
+    <div style="background-color: #f99E53; width: 100%; margin-top: 0%;">
+      <div style="height: 5vh;"></div>
       <div style="height: 5vh;"> </div>
-  </div>
+    </div>
 
     <div style="background-image: url('images/last_bg.png'); background-size: cover; background-position: center;">
       <div style="height: 1vh;"></div>
@@ -192,28 +236,63 @@
           
           <div style="display: flex; flex-direction: column; padding-left: 10%; padding-right: 25%;">
 
-            <button class="faq-toggle"><span class="faq-text">This is the Question 1 of the FAQ content. </span><span class="faq-arrow">></span></button>
+            <button class="faq-toggle"><span class="faq-text">
+              Who can apply?
+            </span><span class="faq-arrow">></span></button>
             <div class="faq-content">
-              This is the first line of the FAQ content.<br>
-              This is the second line of the FAQ content.<br>
-              This is the third line of the FAQ content.
+              Every student who in its Master or Bachelor degree.
             </div>
         
-            <button class="faq-toggle"><span class="faq-text">Question 2</span><span class="faq-arrow">></span></button>
-            <div class="faq-content" style="display: none;">Answer 2</div>
-        
-            <button class="faq-toggle"><span class="faq-text">Question 3</span><span class="faq-arrow">></span></button>
-            <div class="faq-content" style="display: none;">Answer 3</div>
+            <button class="faq-toggle"><span class="faq-text">
+              Do I need to submit my CV? Should CV's be in Portuguese or English?
+            </span><span class="faq-arrow">></span></button>
+            <div class="faq-content">
+              Any language will do.
+            </div>
 
-            <button class="faq-toggle"><span class="faq-text">Question 4</span><span class="faq-arrow">></span></button>
-            <div class="faq-content" style="display: none;">Answer 4</div>
-        
-            <button class="faq-toggle"><span class="faq-text">Question 5</span><span class="faq-arrow">></span></button>
-            <div class="faq-content" style="display: none;">Answer 5</div>
-        
-            <button class="faq-toggle"><span class="faq-text">Question 6</span><span class="faq-arrow">></span></button>
-            <div class="faq-content" style="display: none;">Answer 6</div>
-          </div>
+            <button class="faq-toggle"><span class="faq-text">
+              Do I need to pay to participate?
+            </span><span class="faq-arrow">></span></button>
+            <div class="faq-content">
+              Nooooo!!
+            </div>
+
+            <button class="faq-toggle"><span class="faq-text">
+              Can me and my friend enroll as a team?
+            </span><span class="faq-arrow">></span></button>
+            <div class="faq-content">
+              Yessss. You both should fill the form and indicate the name of the person you would like to be paired with.
+            </div>
+
+            <button class="faq-toggle"><span class="faq-text">
+              How many people are in the team?
+            </span><span class="faq-arrow">></span></button>
+            <div class="faq-content">
+              3 or 4 people in each team!
+            </div>
+
+            <button class="faq-toggle"><span class="faq-text">
+              Who do I contact if I have any questions?
+            </span><span class="faq-arrow">></span></button>
+            <div class="faq-content">
+              lisbon@best-eu.org
+            </div>
+
+            <button class="faq-toggle"><span class="faq-text">
+              How can I win?
+            </span><span class="faq-arrow">></span></button>
+            <div class="faq-content">
+              There will be 3 moments of evaluation in the end of each slot.<br>
+              There you will be evaluated by the industry representative of each part.
+            </div>
+
+            <button class="faq-toggle"><span class="faq-text">
+              Do I need to have any experience?
+            </span><span class="faq-arrow">></span></button>
+            <div class="faq-content">
+              Nooo. The professionals will give you all the skills you need to know.<br>
+              In this event you will learn how to be an entrepreneur.
+            </div>
         
         </div>
       </div>
@@ -224,9 +303,16 @@
       </div>
     </div>
     
-    <div class="hexagons" style="z-index: 1000; background-color: black; margin-left: 50%; margin-top: 20%; overflow: hidden;">
-      <img src="images/last_bg.png" style="position: relative; z-index: 2000; width: 20vw; margin-left: -10vw; margin-top: -10vw;" alt="bee" loading="lazy">
+    <div class="text-center py-5">
+      <div id="click-here" class="d-inline-block mt-md-5" style="box-shadow: inset 0 0 2px 4px #F4F3EF;"  >
+        <p class="d-inline-block my-0 align-middle" style="color: #F4F3EF; font-size: 3vw; margin-right: 10vw; margin-left: 20vw;">If you want to participate: </p>
+        <button type="button" class="d-inline-block my-btn rounded-5 my-btn-light-orange px-4 mt-2 mt-md-0" style="height: 6vw; font-size: 3vw; background-color: #F4F3EF; border-color: #F4F3EF;">
+          <a class="text-decoration-none  fw-bold" style="color: #034461;" href="https://docs.google.com/forms/d/1P1rKgaF-wU9Q7YJbDoPwkT1VuI8C_h4h76rhRTKE2cQ/viewform?edit_requested=true">Click Here</a>
+        </button>
+      </div>
     </div>
+
+    <div style="height: 10vh;"></div>
 
   </main>
 
@@ -274,15 +360,7 @@
       </div>
     </footer>
 
-    <script>
-      $('.faq-toggle').click(function() {
-          // Close all FAQ contents except the one associated with the clicked button
-          $('.faq-content').not($(this).next()).slideUp();
-
-          // Toggle the FAQ content associated with the clicked button
-          $(this).next('.faq-content').slideToggle();
-      });
-  </script>
+  <script src="scripts/index.js"></script>
 
   </body>
 

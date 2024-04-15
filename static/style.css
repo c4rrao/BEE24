@@ -50,7 +50,7 @@ body {
 }
 
 .orange-highlight {
-    filter: drop-shadow(0px 0px 50px #f16645);
+    filter: drop-shadow(0px 0px 50px #f99E53);
 }
 
 
@@ -82,9 +82,9 @@ body {
 }
 
 #click-here {
-    box-shadow: inset 0 0 2px 4px #f16645;
+    box-shadow: inset 0 0 2px 4px #f99E53;
     border-radius: 25px;
-    color: #f16645;
+    color: #f99E53;
 }
 
 @media screen and (max-width: 576px) {
@@ -110,7 +110,7 @@ body {
 .curved-rectangle {
     position: relative; 
     width: 100vw; /* Adjust size as needed */
-    height: 50vw; /* Adjust size as needed */
+    height: 70vw; /* Adjust size as needed */
     background-color: #55AE84; /* Adjust color as needed */
     border-radius: 10vw; /* Adjust curvature as needed */
 }
@@ -213,9 +213,87 @@ body {
 .faq-arrow {
     text-align: right;
     color: #034461;
+
 }
 
 .colors {
     color: #F4F3EF;
     color: #034461;
+}
+
+.xgon {
+    width: 19.866771159874608150470219435737vw;
+    height: 17.205128515623448037194657036510vw; /* = 19.866771159874608150470219435737vw * sqrt(3) / 2 */
+    position: relative;
+    background: var(--bg-url, #F4F3EF) no-repeat center center; /* Use the image URL from the --bg-url property, or #F4F3EF if it's missing or invalid */
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    overflow: hidden;
+    background-size: cover;
+}
+
+.xgon-outline{
+    width: 19.866771159874608150470219435737vw;
+    height: 17.205128515623448037194657036510vw; /* = 19.866771159874608150470219435737vw * sqrt(3) / 2 */
+    position: relative;
+    background: #F4F3EF; /* This is the outline color */
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    overflow: hidden;
+}
+
+.xgon-outline::before{
+    content: "";
+    position: absolute;
+    top: 2%; right: 2%; bottom: 2%; left: 2%;
+    background: var(--bg-url, transparent) no-repeat center center; /* Use the image URL from the --bg-url property, or transparent if it's missing or invalid */
+    background-size: cover; /* Makes the image occupy the entire hexagon */
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.xgon-outline::after {
+    content: "";
+    position: absolute;
+    top: 2%; right: 2%; bottom: 2%; left: 2%;
+    background: var(--bg-color, #034461); /* This is the fallback color */
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    z-index: -1; /* This puts the ::after pseudo-element behind the ::before pseudo-element */
+}
+
+.xgon-outline img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.xgon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.mobile-only {
+    display: none;
+}
+
+.desktop-only {
+    display: block;
+}
+
+.wide-screen-only {
+    display: block;
+}
+
+@media screen and (max-width: 800px) {
+    .mobile-only {
+        display: block;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    .wide-screen-only {
+        display: none;
+    }
 }
